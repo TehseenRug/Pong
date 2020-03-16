@@ -22,7 +22,7 @@ export class GameBoard extends React.Component{
     }
 
     render() {
-        return (<div>This should be the game board {this.props.value} the current time {this.state.time} s.</div>);
+        return (<div>This should be the game board {this.props.value}</div>);
     }
 
 
