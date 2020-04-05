@@ -1,5 +1,6 @@
 import {GameBoard} from "./GameBoard";
 import React from "react";
+import {PointsPanel} from "./PointsPanel";
 
 export class GamePage extends React.Component {
 
@@ -17,6 +18,7 @@ export class GamePage extends React.Component {
             <div>
                 <h2>Let's play Ping Pong</h2>
                 <button onClick={this.toggleGameActive}>Start Game</button>
+                <PointsPanel/>
                 <GameBoard gameActive={this.state.gameActive}/>
             </div>);
     }
