@@ -6,10 +6,10 @@ export class PointsPanel extends React.Component {
         return (
             <span>
                 <div>
-                Player 1 Score: 5
+                Player 1 Score: {this.props.score.scorePlayer1}
                 </div>
                 <div>
-                Player 2 Score: 3
+                Player 2 Score: {this.props.score.scorePlayer2}
                 </div>
             </span>
         );
