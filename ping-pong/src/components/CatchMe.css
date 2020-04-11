@@ -21,6 +21,11 @@
     background-color: crimson;
 }
 
+.catchmecat{
+    width: 76px;
+    height: 76px;
+}
+
 .catchme h2 {
     background-color: #61dafb;
 }

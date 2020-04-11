@@ -6,6 +6,7 @@ export class CatchMePage extends React.Component {
         super(props);
         this.state = {
             gameActive: false,
+            currentPosition: 20
         };
     }
 
@@ -27,8 +28,23 @@ export class CatchMePage extends React.Component {
     }
 
     renderField(id){
+        if(this.choosableField(id)){
+            return (
+                <div className='catchmefield catchmeclickable' onClick={() => alert("You clicked " + id)}> {id} </div>
+            );
+        }
         return (
-            <div className='catchmefield catchmeclickable' onClick={() => alert("You clicked " + id)}> {id} </div>
+            <div className='catchmefield'>
+                <img src={require('./cat.jpg')}  alt="image" className="catchmecat"/>
+            </div>
         );
+
+    }
+
+    choosableField(id){
+        if(this.state.currentPosition === id){
+            return false;
+        }
+        return true;
     }
 }
