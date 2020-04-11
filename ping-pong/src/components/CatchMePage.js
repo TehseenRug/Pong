@@ -28,7 +28,7 @@ export class CatchMePage extends React.Component {
 
     renderField(id){
         return (
-            <div className='catchmefield'> {id} </div>
+            <div className='catchmefield catchmeclickable' onClick={() => alert("You clicked " + id)}> {id} </div>
         );
     }
 }
