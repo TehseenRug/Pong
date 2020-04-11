@@ -14,7 +14,7 @@ function App() {
                     <ul>
                     <li><Link to={'/'}> Home </Link></li>
                     <li><Link to={'/pingpong'}>Let's play</Link></li>
-                    <li><Link to={'/catchme'}>Catch Me If You Can</Link></li>
+                    <li><Link to={'/catchme'}>Cat Me If You Can</Link></li>
                     </ul>
                 </nav>
                 <hr/>
